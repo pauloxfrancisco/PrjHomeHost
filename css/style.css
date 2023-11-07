@@ -19,9 +19,57 @@ p {
 width: 100%;
 background-color:#333;
 height: 80px;
-padding: 0 32px;
+padding: 0 2em;
+box-sizing: border-box;
+position: relative;
+/* IMPEDE que a propriedade padding faça o elemento crescer de tamanho. Exemplo: se um padding for usado em um elemento de 200px de altura  e 200px de largura ele irá faer o elemento ter 220px de largura por 220px de altura. Quando usamos o box-sizing:border-box esse aumento de tamanho não irá acontecer, pois e o espaço do padding será "descontado" do elemento pai*/
 }
+
 .logo{
-    width: 70px;
-/**/
+    width: 50px;
+    margin-top: 15px;
 }
+
+.nav{
+    position: relative;
+}
+.navbar-items {
+    position: absolute;
+    list-style: none;
+/*display: altera o comportamento dos elementos na tela. Ex: converte um elemento de bloco para elemento de linha, e também, permite definir um elemento como flexível usando display:flex.*/
+    display: inline-block ;
+    margin: 0;
+    right: 0;
+    height: 80px;
+    /* line-height=altera o espaçamento entre as linhas de texto. Quando se usa um line-height dsa mesma altura quando o eleemento ele acaba por centralizar o texto na vertical*/
+    line-height:80px;
+    list-style: none;
+}
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+.navbar-items li a{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+/*hover= representa o passar do mouse sobre o elemento*/
+.navbar-items li a:hover {
+    color: #ccc;
+}
+.default-btn {
+    background-color: #2CC76A;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+ .main-banner {
+    background-image:url('../img/mainbanner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+
+    
+ }
