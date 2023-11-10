@@ -60,6 +60,7 @@ position: relative;
     background-color: #2CC76A;
     padding: 15px 20px;
     border-radius: 5px;
+    margin-right: 25px;
 }
  .main-banner {
     background-image:url('../img/mainbanner.png');
@@ -135,5 +136,77 @@ position: relative;
 }
 .plans-container{
     display: flex;
-    
+    flex-direction: row;
+    /*space-around aplica o espaçamento entre os elementos filhos. Esse espaçamento irá depender de quanto espaço vazio resta no elemento pai // space-around faz o mesmo que o space-between com a unica diferença que também será colocado espaçamento nas margens direita e esquerda*/
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 90%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.plans-container .plan{
+    width: 275px;
+    margin: 0 20px;
+}
+.plans-container .plan ul{
+    list-style: none;
+    padding: 0;
+}
+
+.plan li{
+    height: 70px;
+    line-height: 70px;
+    background-color: #e8e9ea;
+    color: #333;   
+}
+.plan .price{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #2CC76A;
+    color: #FFF;
+    text-align: center;
+    line-height: 140px;
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px; 
+}
+.plan .plan-name{
+    text-transform: uppercase;  
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #FFF;
+    background-color: #202b34;
+    font-weight: bold; /*deixa em negrito*/
+}
+.plan .plan-btn{
+    color: #FFF;
+    background-color: #2cc76a;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+.plan .recommended{
+    background-color: crimson;
+}
+.searchdomain-container{
+    background-color: #34454e;
+    text-align: center;
+    padding: 5em 0;
+}
+.searchdomain-container h2{
+    color: #fff;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.searchdomain-container p{
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+
 }
